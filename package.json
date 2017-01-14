@@ -1,0 +1,26 @@
+{
+  "name": "deadcode",
+  "version": "1.0.0",
+  "description": "CLI to find dead js files",
+  "main": "bin/deadcode.js",
+  "scripts": {
+    "test": "mocha ./libs/**/__tests__/*_test.js",
+    "tdd": "mocha --watch ./libs/**/*.js ./libs/**/__tests__/*_test.js",
+    "acceptance-test": "cucumber.js"
+  },
+  "bin": {
+    "deadcode": "bin/deadcode.js"
+  },
+  "author": "Fredrik Christenson",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fc-tools": "^1.5.0",
+    "immutable": "^3.8.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cucumber": "^2.0.0-rc.2",
+    "mocha": "^3.2.0"
+  }
+}
